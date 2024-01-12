@@ -30,11 +30,7 @@ public class DateServlet extends HttpServlet
 {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
-    try {
-    InetAddress addr = InetAddress.getByName(request.getRemoteAddr());
-    //...
-  }
-  catch (UnknownHostException e) {  // Compliant
-    //...
-  }
+    {
+        req.getRequestDispatcher("/test/tag2.jsp").forward(req,resp);
+    }
 }
