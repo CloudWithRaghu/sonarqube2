@@ -34,7 +34,7 @@ public class DateServlet extends HttpServlet
     InetAddress addr = InetAddress.getByName(request.getRemoteAddr());
     //...
   }
-  catch (UnknownHostException ex) {  // Compliant
+  catch (UnknownHostException e) {  // Compliant
     //...
   }
 }
